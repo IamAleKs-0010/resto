@@ -5,10 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto | Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/bc13bbd577.js" crossorigin="anonymous"></script>
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#"><img src="" alt="" class="header-nav__brand"><i class="fas fa-utensils">Resto.</i>
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="#">Home</a></li>
+                <li class="nav-list__item"><a href="#">Dishes</a></li>
+                <li class="nav-list__item"><a href="#">About</a></li>
+                <li class="nav-list__item"><a href="#">Menu</a></li>
+                <li class="nav-list__item"><a href="#">Review</a></li>
+                <li class="nav-list__item"><a href="#">Order</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="nav-icons__icon nav-icons__icon--toggle"><i class="fas fa-bars" id="menu-bars"></i></button>
+                <a href="#" class="nav-icons__icon"><i class="fas fa-search" id="search-icon"></i></a>
+                <a href="#" class="nav-icons__icon"><i href="#" class="fas fa-heart"></i></a>
+                <a href="#" class="nav-icons__icon"><i href="#" class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="special-dishes swiper" id="dishes-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <span class="swiper-content__title-desc">Our Special Dish</span>
+                        <h3 class="swiper-content__title">Spicy Noodles</h3>
+                        <p class="swiper-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
+                        <a href="#" class="swiper-content__link">Order Now!</a>
+                    </div>
+                    <div class="swiper-img">
+                        <img src="/assets/img/home-img-1.png" alt="Spicy Noodles">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <span class="swiper-content__title-desc">Our Special Dish</span>
+                        <h3 class="swiper-content__title">Fried Chicken</h3>
+                        <p class="swiper-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
+                        <a href="#" class="swiper-content__link">Order Now!</a>
+                    </div>
+                    <div class="swiper-img">
+                        <img src="/assets/img/home-img-2.png" alt="Fried Chicken">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <span class="swiper-content__title-desc">Our Special Dish</span>
+                        <h3 class="swiper-content__title">Hot Pizza</h3>
+                        <p class="swiper-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
+                        <a href="#" class="swiper-content__link">Order Now!</a>
+                    </div>
+                    <div class="swiper-img">
+                        <img src="/assets/img/home-img-3.png" alt="Hot Pizza">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
