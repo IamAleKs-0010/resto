@@ -1,0 +1,29 @@
+    
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+
+    .icon {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 0 2px;
+        color: f.getColor('secondary');
+        background-color: f.getColor('bg-color');
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out, transform .2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon--nav:hover {
+        color: f.getColor('white');
+        background-color: f.getColor('primary');
+        transform: rotate(360deg);
+    }
+
+    .icon--toggle {
+        display: block;
+    }

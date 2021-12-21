@@ -1,0 +1,43 @@
+
+    
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+
+.nav-list {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 51px;
+    padding: 15px 15px;
+    background-color: f.getColor('white');
+    outline: v.$outline;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .2s ease-in-out;
+
+    &__item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 6px;
+        padding: 8px 12px; 
+        color: f.getColor('text-color');
+        background-color: f.getColor('bg-color');
+        border-radius: 5px;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: f.getColor('primary'); 
+        }
+
+        &--active, &--active:link, &--active:visited  {
+            color: #fff;
+            background-color: f.getColor('primary');
+        }
+    }
+}
+
+.header-nav .nav-list--active {
+    clip-path: polygon(0px 0px, 100% 0px, 100% 101%, 0px 101%);
+}
+
