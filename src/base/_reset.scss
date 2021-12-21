@@ -1,0 +1,23 @@
+    
+     @use '../utils/variables' as v;
+     @use '../utils/functions' as f;
+ 
+     * {
+         box-sizing: border-box;
+     }
+     
+     body {
+         // margin: 0; 
+         margin: 995px 0 0 0;
+         font-family: 'Nunito', sans-serif;
+         scroll-behavior: smooth;
+     }
+ 
+     a {
+         color: f.getColor('secondary');
+         text-decoration: none;
+     }
+ 
+     ul{
+         list-style-type: none;
+     }
