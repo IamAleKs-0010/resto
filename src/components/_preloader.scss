@@ -14,11 +14,11 @@
         background-size: 70%;
 
         @include queryMin('md') {
-            background-size: 500px;
+            background-size: 300px;
         }
 
         @include queryMin('xxl') { 
-            background-size: 600px;
+            background-size: 350px;
         }
 
         &--fade-out { 

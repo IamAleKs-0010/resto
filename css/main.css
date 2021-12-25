@@ -605,12 +605,12 @@ html {
 }
 @media (min-width: 800px) {
   .preloader {
-    background-size: 500px;
+    background-size: 300px;
   }
 }
 @media (min-width: 1650px) {
   .preloader {
-    background-size: 600px;
+    background-size: 350px;
   }
 }
 .preloader--fade-out {
@@ -940,7 +940,7 @@ html {
 }
 @media (min-width: 1650px) {
   .reviews-swiper {
-    padding: 0 400px;
+    padding: 0 350px;
   }
 }
 @media (min-width: 2800px) {

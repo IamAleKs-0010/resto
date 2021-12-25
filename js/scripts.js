@@ -1,11 +1,16 @@
 /* PreLoader */
-    // let loader = document.getElementById('preloader')
-    // window.addEventListener('load', () => {
-    //     setTimeout(() => {
-    //         loader.classList.add('preloader--fade-out')
+    let loader = document.getElementById('preloader')
+    const disabledScroll = () => {
+        window.scrollTo(0, 0)
+    }
 
-    //     }, 2000);
-    // })
+    window.addEventListener('load', () => {
+        window.addEventListener('scroll', disabledScroll)
+        setTimeout(() => {
+            window.removeEventListener('scroll', disabledScroll)
+            loader.classList.add('preloader--fade-out')
+        }, 1500);
+    })
 
 /* Nav */
     const button = document.getElementById('menu-bars')
@@ -75,7 +80,7 @@
     });
 
 
-    /* Observers */
+/* Observers */
     const links = document.querySelectorAll('.nav-list__item')
     const sections = document.querySelectorAll('.ob')
     const observer = new IntersectionObserver( (entries) => {
