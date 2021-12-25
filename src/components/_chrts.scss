@@ -1,0 +1,36 @@
+        
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+
+    .resto-chrts {
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 7px;
+
+        &__chrt {
+            width: 100%;
+            // min-width: 70px;
+            padding: 5px 10px;
+            height: 45px;
+            margin-bottom: 8px;
+            font-size: .8rem;
+            font-family: sans-serif;
+            background-color: f.getColor('bg-color');
+            border-radius: 5px;
+            outline: v.$outline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-basis: 150px;
+        }
+    }
+
+    .chrt__icon {
+        margin-right: 5px;
+        color: f.getColor('primary');
+        font-size: 18px;
+    }

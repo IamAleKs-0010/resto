@@ -1,0 +1,102 @@
+        
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+    @use '../utils/mixins' as *;
+
+    .cards-container {
+        width: 98%;
+        margin: 0 auto;
+        
+        &--small {
+            max-width: 1500px;
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));        
+        }
+
+        &--large {
+            max-width: 1500px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));        
+        }
+    }
+
+    .card {
+        position: relative;
+        width: 95%;
+        height: max-content;
+        margin: 15px auto 15px auto;
+        padding: 20px 10px;
+        background-color: f.getColor('white');
+        outline: v.$outline;
+        box-shadow: v.$shadow;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        &__price-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--large {
+                justify-content: flex-start;
+                gap: 10px;
+            }
+        }
+        
+        &__stars {
+            margin-bottom: 8px;
+            font-size: .9rem;
+            color: f.getColor('primary');
+        }
+
+        &__img{
+            width: 100%;
+            max-height: 250px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        &:hover > .icon--card-right {
+            transform: translateX(-10px);
+        }
+    
+        &:hover > .icon--card-left {
+            transform: translateX(10px);
+        }
+    
+        &--small {
+            &__image {
+                height: 100%;
+                max-height: 170px;
+            }
+
+            @include queryMin ('sm') {
+                height: 340px;
+                margin: 5px;
+                padding: 35px 0 15px 0;
+            }
+        }
+
+        &--large {
+
+            &__image {
+                width: 100%;
+                max-height: 160px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            @media (min-width: 580px) {
+                margin: 5px;
+                padding: 20px 15px 20px 15px;
+            }
+        }
+    }
+
+    .price {
+        font-size: 100%;
+    }
+

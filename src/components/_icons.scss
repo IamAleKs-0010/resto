@@ -1,6 +1,7 @@
     
     @use '../utils/variables' as v;
     @use '../utils/functions' as f;
+    @use '../utils/mixins' as *;
 
     .icon {
         display: inline-block;
@@ -12,18 +13,55 @@
         border: none;
         border-radius: 30px;
         cursor: pointer;
-        transition: background-color .2s ease-in-out, color .2s ease-in-out, transform .2s ease-in-out;
+        transition: all .2s ease-in-out;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    .icon--nav:hover {
-        color: f.getColor('white');
-        background-color: f.getColor('primary');
-        transform: rotate(360deg);
-    }
+        &:hover {
+            color: f.getColor('white');
+            background-color: f.getColor('primary');
+        }
 
-    .icon--toggle {
-        display: block;
+        @include queryMin('md') {
+            width: 40px;
+            height: 40px;            
+        }
+
+        &--nav:hover {
+            transform: rotate(360deg);
+        }
+
+        &--toggle {
+            display: block;
+            
+            @include queryMin('md') {
+                display: none;
+            }
+        }
+
+        &--card-right {
+            position: absolute;   
+            top: 10px;    
+            right: 0;
+            transform: translateX(70px);
+        }
+
+        &--card-left {
+            position: absolute;   
+            top: 10px; 
+            left: 0;   
+            transform: translateX(-70px);
+        }
+
+        &--float {
+            position: absolute;
+            top: 25px;
+            right: 13px;
+            background-color: f.getColor('white');
+
+            @media (min-width: 580px) {
+                right: 20px;
+            }
+        }
     }

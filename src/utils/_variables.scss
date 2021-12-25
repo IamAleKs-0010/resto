@@ -3,12 +3,35 @@
     $outline: 1px solid #cccccc;
     $weights: 200, 300, 400, 600, 700;
 
-
     $palette: (
         'primary': #27ae60,
         'secondary': #192a56,
         'text-color': #666,
         'bg-color': #eeeeee,
         'gray-dark': #cccccc,
+        'gray-light': #a4a4a4,
         'white': #fff
-    )
+    );
+
+    $breakpoints: (
+                'sm': 569px,
+                'md': 800px,
+                'lg': 850px,
+                'headerbk': 860px,
+                'xl': 1030px,
+                'xxl': 1650px,
+                'xxxl': 2800px,
+
+    );
+
+        // 'xs': 600px,
+
+
+//     <!-- breakpoints
+// 'xs': 0
+// 'sm': 576px
+// 'md': 768px
+// 'lg': 992px
+// 'xl': 1200px
+// 'xxl': 1400px
+// 'xxxl': 1600px -->

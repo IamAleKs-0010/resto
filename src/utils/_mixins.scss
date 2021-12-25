@@ -1,0 +1,34 @@
+        
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+
+    // @mixin small {
+    //     @media only screen and (max-width: f.getBreakpoint('sm')) {
+    //         @content
+    //     }
+    // };
+
+    @mixin queryMin ($min) {
+        $min: f.getBreakpoint($min);
+        
+        @media (min-width: #{$min}) {
+            @content
+        }
+    };
+
+    @mixin queryMax ($max) {
+        $max: f.getBreakpoint($max);
+        @media (max-width: #{$max}) {
+            @content
+        }
+    };
+
+    @mixin queryMinMax ($min, $max) {
+        $min: f.getBreakpoint($min);
+        $max: f.getBreakpoint($max);
+
+        @media (min-width: #{$min}) and (max-width: #{$max}) {
+            @content
+        }
+    };
+

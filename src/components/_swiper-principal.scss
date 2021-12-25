@@ -1,0 +1,79 @@
+    
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+    @use '../utils/mixins' as *;
+
+    .special-dishes {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: max-content;
+        padding-top: 95px;
+        margin-bottom: 15px;
+        padding: 0 16px;
+        overflow-x: hidden;
+        display: flex;
+
+        @include queryMin('lg') {
+            padding: 95px 35px 55px 35px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        &__slide {
+           
+            @include queryMin('lg') {
+                padding: 0 35px;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(150px, 800px));
+                grid-template-rows: 1fr;
+                grid-template-areas: "textcontent img";
+
+                .swiper-content {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: start;
+                    justify-content: center;
+                    grid-area: textcontent;
+                }
+            }        
+        }
+ 
+    }
+
+
+    .swiper { 
+        &-special-dishes {
+            margin: 0 auto;
+            max-width: 1660px;
+        }
+
+        &-pagination-bullet-active {
+            background-color: f.getColor('primary');
+        }
+
+        &-img {
+            width: 100%;
+            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            
+            &__image {
+                padding-top: 15px;
+                width: inherit;
+    
+                @include queryMin('lg') {
+                    width: 85%;
+                    max-width: 650px;
+                }     
+            }
+    
+            @include queryMin('lg') {
+                padding: 0;
+                grid-area: img;  
+            }     
+        }
+    }
+
+

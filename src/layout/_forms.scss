@@ -1,0 +1,74 @@
+
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+    @use '../utils/mixins' as *;
+
+    .form {
+        width: 95%;
+        max-width: 1100px;
+        margin: 15px auto;
+        padding: 15px 16px;
+        background-color: f.getColor('white');
+        border-radius: 5px;
+        box-shadow: v.$shadow;
+
+        @include queryMin('md') {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 15px;
+        }
+    }    
+
+    .form-g {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: .8rem;
+        text-align: left;
+        color: f.getColor('text-color');
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media (min-width: 840px){
+            max-width: 49%;
+        }
+
+        &__input {
+            width: 100%;
+            height: 35px;
+            padding: 0 15px;
+            font-size: .7rem;
+            background-color: f.getColor('bg-color');
+            border-radius: 5px;
+            outline: 1px solid transparent;
+        
+
+            &--textarea {
+                height: 130px;
+                padding: 10px 15px;
+                font-family: sans-serif;
+                
+                &::placeholder {
+                    color: f.getColor('text-color');
+                }
+            }
+
+            &--date {
+                color: f.getColor('gray-light');
+                font-family: sans-serif;
+            }
+
+            &::placeholder {
+                color: f.getColor('text-color');
+            }
+
+            &:focus {
+                outline: 1px solid f.getColor('primary');
+                transition: outline .2s ease-in-out;
+            }
+        }
+    }
+
+    .submit-container {
+        width: 100%;
+    }

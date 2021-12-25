@@ -2,8 +2,17 @@
     @forward 'base/reset';
     @forward 'base/typography';
     @forward 'layout/header';
+    @forward 'layout/forms';
+    @forward 'layout/main';
+    @forward 'layout/footer';
+    @forward 'components/preloader';
+    @forward 'components/btn';
     @forward 'components/icons';
     @forward 'components/nav';
+    @forward 'components/swiper-principal';
+    @forward 'components/cards';
+    @forward 'components/swiper-reviews';
+    @forward 'components/chrts';
 
 
 

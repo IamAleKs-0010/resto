@@ -1,0 +1,95 @@
+    
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+    @use '../utils/mixins' as *;
+
+    .popular-dishes {
+        width: 100%;
+        z-index: 20;
+        padding: 25px 0;
+        text-align: center;
+        background-color: f.getColor('bg-color');
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-us {
+        width: 100%;
+        padding: 25px 8px;
+        text-align: center;
+        background-color: f.getColor('white');
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+
+        @include queryMin('md') {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        @include queryMin('xl') {
+            height: max-content;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+
+        &__grid {
+            max-width: 1660px;
+            margin: 0 auto;
+
+            @include queryMin('xl') {
+                display: grid;
+                grid-template-columns: minmax(400px, 800px) minmax(500px 1fr);
+                grid-template-rows: max-content;
+                grid-template-areas: "img aboutcontent";
+                gap: 15px;
+            }
+        }
+        
+        &__img-container {
+            grid-template-areas: img;
+
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            justify-items: center;
+            grid-template-areas: aboutcontent;
+        }
+
+        &-image{
+            width: 95%;
+            max-width: 724px;
+            margin: 10px auto 25px auto;
+        }
+    }
+
+    .today-dishes{
+        width: 100%;
+        padding: 25px 0;
+        background-color: f.getColor('bg-color');
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .reviews {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+        background-color: f.getColor('white')
+    }
+
+    .order-now {
+        width: 100%;
+        padding: 25px 8px;
+        text-align: center;
+        background-color: f.getColor('bg-color');
+    }
