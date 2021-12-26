@@ -598,7 +598,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #fff url("../../assets/img/loader.gif") no-repeat center;
+  background: #fff url("../assets/img/loader.gif") no-repeat center;
   background-size: 70%;
 }
 @media (max-width: 800px) {
