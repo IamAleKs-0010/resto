@@ -13,10 +13,10 @@
     })
 
 /* Nav */
+    const links = document.querySelectorAll('.nav-list__item')
     const button = document.getElementById('menu-bars')
     const nav = document.getElementById('nav-list')
     const toggleIcon = document.getElementById('toggle')
-    
     
     button.addEventListener('click', () => {
         nav.classList.toggle('nav-list--active')
@@ -38,6 +38,12 @@
             nav.classList.remove('nav-list--active')
         }
     })
+
+    for(let i = 0; i < 5; i++) {
+        links[i].addEventListener('click', () => {
+            nav.classList.remove('nav-list--active')
+        })
+    }
 
 
 /* Swiper by swiperjs.com */
@@ -81,7 +87,6 @@
 
 
 /* Observers */
-    const links = document.querySelectorAll('.nav-list__item')
     const sections = document.querySelectorAll('.ob')
     const observer = new IntersectionObserver( (entries) => {
         
