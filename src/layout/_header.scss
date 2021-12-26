@@ -86,10 +86,10 @@
                 background-color: f.getColor('primary');
             }
         }
-    }
 
-    .nav-list--active {
-        clip-path: polygon(0px 0px, 100% 0px, 100% 101%, 0px 101%);
+        &--active {
+            clip-path: polygon(0px 0px, 100% 0px, 100% 101%, 0px 101%);
+        }
     }
 
     .brand {

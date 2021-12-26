@@ -241,7 +241,6 @@ html {
   color: #fff;
   background-color: #27ae60;
 }
-
 .nav-list--active {
   -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 101%, 0px 101%);
           clip-path: polygon(0px 0px, 100% 0px, 100% 101%, 0px 101%);
@@ -578,7 +577,6 @@ html {
   transition: color 0.2s ease-in-out;
   cursor: pointer;
 }
-
 .footer-nav {
   margin-top: 5px;
   padding: 0;
@@ -603,14 +601,19 @@ html {
   background: #fff url("../../assets/img/loader.gif") no-repeat center;
   background-size: 70%;
 }
+@media (max-width: 800px) {
+  .preloader {
+    background-size: 60%;
+  }
+}
 @media (min-width: 800px) {
   .preloader {
-    background-size: 300px;
+    background-size: 400px;
   }
 }
 @media (min-width: 1650px) {
   .preloader {
-    background-size: 350px;
+    background-size: 400px;
   }
 }
 .preloader--fade-out {
@@ -723,9 +726,8 @@ html {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding-top: 95px;
+  padding: 95px 16px 0 16px;
   margin-bottom: 15px;
-  padding: 0 16px;
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,6 +945,11 @@ html {
     padding: 0 350px;
   }
 }
+@media (min-width: 1919px) {
+  .reviews-swiper {
+    padding: 0 470px;
+  }
+}
 @media (min-width: 2800px) {
   .reviews-swiper {
     padding: 0 900px;
@@ -960,6 +967,11 @@ html {
           box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   outline: 1px solid #cccccc;
+}
+@media (min-width: 100px) and (max-width: 460px) {
+  .review-card {
+    height: 230px;
+  }
 }
 @media (min-width: 740px) {
   .review-card {

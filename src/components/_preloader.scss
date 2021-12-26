@@ -13,12 +13,16 @@
         background: f.getColor('white') url("../../assets/img/loader.gif") no-repeat center ; 
         background-size: 70%;
 
-        @include queryMin('md') {
-            background-size: 300px;
+        @include queryMax ('md'){
+            background-size: 60%;
+        }
+        
+        @include queryMin ('md') {
+            background-size: 400px;
         }
 
         @include queryMin('xxl') { 
-            background-size: 350px;
+            background-size: 400px;
         }
 
         &--fade-out { 

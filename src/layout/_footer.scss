@@ -53,19 +53,20 @@
                 cursor: pointer;
             }
         }
-    }
 
-    .footer-nav {
-        margin-top: 5px;
-        padding: 0;
-
-        &__item {
-            font-size: .75rem;
-            color: f.getColor('text-color');
-            
-            &:hover {
-                color: f.getColor('primary');
-                transition: color .2s ease-in-out;
+        &-nav {
+            margin-top: 5px;
+            padding: 0;
+    
+            &__item {
+                font-size: .75rem;
+                color: f.getColor('text-color');
+                
+                &:hover {
+                    color: f.getColor('primary');
+                    transition: color .2s ease-in-out;
+                }
             }
         }
     }
+

@@ -23,6 +23,11 @@
         @include queryMin('xxl') {
             padding: 0 350px;
         }
+
+        @media (min-width: 1919px) {
+            padding: 0 470px;
+        }
+        
         @include queryMin('xxxl') {
             padding: 0 900px;
         }
@@ -40,6 +45,10 @@
         box-shadow: v.$shadow;
         border-radius: 5px;
         outline: v.$outline;
+
+        @media(min-width: 100px) and (max-width: 460px) {
+            height: 230px;        }
+
 
         @media (min-width: 740px) {
             min-height: 230px;

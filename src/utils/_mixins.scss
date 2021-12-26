@@ -2,12 +2,6 @@
     @use '../utils/variables' as v;
     @use '../utils/functions' as f;
 
-    // @mixin small {
-    //     @media only screen and (max-width: f.getBreakpoint('sm')) {
-    //         @content
-    //     }
-    // };
-
     @mixin queryMin ($min) {
         $min: f.getBreakpoint($min);
         
