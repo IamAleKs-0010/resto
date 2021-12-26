@@ -84,7 +84,8 @@
         width: 100%;
         padding: 25px 0;
         text-align: center;
-        background-color: f.getColor('white')
+        background-color: f.getColor('white');
+        overflow: hidden;
     }
 
     .order-now {

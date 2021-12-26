@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -499,6 +500,7 @@ html {
   padding: 25px 0;
   text-align: center;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .order-now {
