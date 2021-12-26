@@ -3,7 +3,7 @@
     const disabledScroll = () => {
         window.scrollTo(0, 0)
     }
-
+    
     window.addEventListener('load', () => {
         window.addEventListener('scroll', disabledScroll)
         setTimeout(() => {
