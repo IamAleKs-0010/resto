@@ -148,7 +148,7 @@ html {
           box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   outline: 1px solid #cccccc;
 }
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   .header {
     height: 70px;
     -webkit-box-align: center;
@@ -187,7 +187,7 @@ html {
   transition: clip-path 0.2s ease-in-out;
   transition: clip-path 0.2s ease-in-out, -webkit-clip-path 0.2s ease-in-out;
 }
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   .nav-list {
     position: relative;
     margin-top: 0;
@@ -218,7 +218,7 @@ html {
   -webkit-transition: all;
   transition: all;
 }
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   .nav-list__item {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -254,7 +254,7 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
 }
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   .brand {
     margin-left: 30px;
     line-height: 70px;
@@ -275,7 +275,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   .nav-icons {
     margin-right: 30px;
     line-height: 70px;
@@ -690,7 +690,7 @@ html {
 .icon--toggle {
   display: block;
 }
-@media (min-width: 800px) {
+@media (min-width: 880px) {
   .icon--toggle {
     display: none;
   }

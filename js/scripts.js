@@ -39,12 +39,18 @@
         }
     })
 
-    for(let i = 0; i < 5; i++) {
-        links[i].addEventListener('click', () => {
-            nav.classList.remove('nav-list--active')
-        })
-    }
-
+    // const navClick = () => {
+    //     for(let i = 0; i < 5; i++) {
+    //         links[i].addEventListener('click', () => {
+        //         })
+        //     }
+        // }
+        // navClick()
+        
+    nav.addEventListener('click', (e) => {
+        nav.classList.remove('nav-list--active')
+        toggleIcon.classList.remove('fa-times')
+    })
 
 /* Swiper by swiperjs.com */
     var swiper = new Swiper(".home-swiper", {
