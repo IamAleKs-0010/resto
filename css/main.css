@@ -352,7 +352,7 @@ html {
   color: #666;
 }
 .form-g__input--date {
-  color: #a4a4a4;
+  color: #666;
   font-family: sans-serif;
 }
 .form-g__input::-webkit-input-placeholder {
@@ -383,7 +383,7 @@ html {
 .popular-dishes {
   width: 100%;
   z-index: 20;
-  padding: 25px 0;
+  padding: 85px 0;
   text-align: center;
   background-color: #eeeeee;
   display: -webkit-box;
@@ -400,7 +400,7 @@ html {
 
 .about-us {
   width: 100%;
-  padding: 25px 8px;
+  padding: 85px 8px;
   text-align: center;
   background-color: #fff;
   display: -webkit-box;
@@ -476,7 +476,7 @@ html {
 
 .today-dishes {
   width: 100%;
-  padding: 25px 0;
+  padding: 85px 0;
   background-color: #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +492,7 @@ html {
 
 .reviews {
   width: 100%;
-  padding: 25px 0;
+  padding: 85px 0;
   text-align: center;
   background-color: #fff;
   overflow: hidden;
@@ -500,7 +500,7 @@ html {
 
 .order-now {
   width: 100%;
-  padding: 25px 8px;
+  padding: 85px 8px;
   text-align: center;
   background-color: #eeeeee;
 }
