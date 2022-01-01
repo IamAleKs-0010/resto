@@ -24,9 +24,11 @@
 
         if(click == true){
             toggleIcon.classList.toggle('fa-times', 'fa-bars')
+            button.setAttribute('aria-label', "Close Menu")
             
         } else{
             toggleIcon.classList.remove('fa-times')
+            button.setAttribute('aria-label', 'Open Menu')
         }
     })
 
