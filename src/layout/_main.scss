@@ -6,7 +6,7 @@
     .popular-dishes {
         width: 100%;
         z-index: 20;
-        padding: 25px 0;
+        padding: 85px 0;
         text-align: center;
         background-color: f.getColor('bg-color');
         display: flex;
@@ -16,7 +16,7 @@
 
     .about-us {
         width: 100%;
-        padding: 25px 8px;
+        padding: 85px 8px;
         text-align: center;
         background-color: f.getColor('white');
         display: flex;
@@ -73,7 +73,7 @@
 
     .today-dishes{
         width: 100%;
-        padding: 25px 0;
+        padding: 85px 0;
         background-color: f.getColor('bg-color');
         display:flex;
         align-items: center;
@@ -82,7 +82,7 @@
 
     .reviews {
         width: 100%;
-        padding: 25px 0;
+        padding: 85px 0;
         text-align: center;
         background-color: f.getColor('white');
         overflow: hidden;
@@ -90,7 +90,7 @@
 
     .order-now {
         width: 100%;
-        padding: 25px 8px;
+        padding: 85px 8px;
         text-align: center;
         background-color: f.getColor('bg-color');
     }
