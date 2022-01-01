@@ -42,7 +42,6 @@
             border-radius: 5px;
             outline: 1px solid transparent;
         
-
             &--textarea {
                 height: 130px;
                 padding: 10px 15px;
@@ -54,7 +53,7 @@
             }
 
             &--date {
-                color: f.getColor('gray-light');
+                color: f.getColor('text-color');
                 font-family: sans-serif;
             }
 
