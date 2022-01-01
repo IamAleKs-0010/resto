@@ -39,14 +39,6 @@
         }
     })
 
-    // const navClick = () => {
-    //     for(let i = 0; i < 5; i++) {
-    //         links[i].addEventListener('click', () => {
-        //         })
-        //     }
-        // }
-        // navClick()
-        
     nav.addEventListener('click', (e) => {
         nav.classList.remove('nav-list--active')
         toggleIcon.classList.remove('fa-times')
