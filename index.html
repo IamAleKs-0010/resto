@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,18 +17,18 @@
         <nav class="header-nav">
             <a href="#" class="brand"><i class="fas fa-utensils brand__icon"></i>Resto.</a>
             <ul class="nav-list" id="nav-list">
-                <li><a href="#home" class="nav-list__item">Home</a></li>
-                <li><a href="#dishes" class="nav-list__item">Dishes</a></li>
-                <li><a href="#about" class="nav-list__item">About</a></li>
-                <li><a href="#menu" class="nav-list__item">Menu</a></li>
-                <li><a href="#review" class="nav-list__item">Review</a></li>
-                <li><a href="#order" class="nav-list__item">Order</a></li>
+                <li><a href="#home" class="nav-list__item" aria-label="Home">Home</a></li>
+                <li><a href="#dishes" class="nav-list__item" aria-label="Dishes">Dishes</a></li>
+                <li><a href="#about" class="nav-list__item" aria-label="About">About</a></li>
+                <li><a href="#menu" class="nav-list__item" aria-label="Menu">Menu</a></li>
+                <li><a href="#review" class="nav-list__item" aria-label="Review">Review</a></li>
+                <li><a href="#order" class="nav-list__item" aria-label="Order">Order</a></li>
             </ul>
             <div class="nav-icons">
-                <button class="icon icon--nav icon--toggle" id="menu-bars"><i class="fas fa-bars" id="toggle"></i></button>
-                <a href="#" class="icon icon--nav"><i class="fas fa-search"></i></a>
-                <a href="#" class="icon icon--nav"><i class="fas fa-heart"></i></a>
-                <a href="#" class="icon icon--nav"><i class="fas fa-shopping-cart"></i></a>
+                <button class="icon icon--nav icon--toggle" id="menu-bars" aria-label="Open Menu"><i class="fas fa-bars" id="toggle"></i></button>
+                <a href="#" class="icon icon--nav" aria-label="Search Dishes"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon icon--nav" aria-label="My Favorite Dishes"><i class="fas fa-heart"></i></a>
+                <a href="#" class="icon icon--nav" aria-label="Buy Menus"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
     </header>
@@ -40,7 +40,7 @@
                         <span class="title-desc title-desc--swiper">Our Special Dish</span>
                         <h3 class="title title--swiper">Spicy Noodles</h3>
                         <p class="text text--swiper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
-                        <a href="#" class="btn-link">Order Now!</a>
+                        <a href="#" class="btn-link" aria-label="Order Spicy Noodles">Order Now!</a>
                     </div>
                     <div class="swiper-img">
                         <img src="assets/img/home-img-1.png" alt="Spicy Noodles" class="swiper-img__image" loading="lazy">
@@ -51,7 +51,7 @@
                         <span class="title-desc title-desc--swiper">Our Special Dish</span>
                         <h3 class="title title--swiper">Fried Chicken</h3>
                         <p class="text text--swiper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
-                        <a href="#" class="btn-link">Order Now!</a>
+                        <a href="#" class="btn-link" aria-label="Order Fried Chicken">Order Now!</a>
                     </div>
                     <div class="swiper-img">
                         <img src="assets/img/home-img-2.png" alt="Fried Chicken" class="swiper-img__image" loading="lazy">
@@ -62,7 +62,7 @@
                         <span class="title-desc title-desc--swiper">Our Special Dish</span>
                         <h3 class="title title--swiper">Hot Pizza</h3>
                         <p class="text text--swiper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique?</p>
-                        <a href="#" class="btn-link">Order Now!</a>
+                        <a href="#" class="btn-link" aria-label="Order Hot Pizza">Order Now!</a>
                     </div>
                     <div class="swiper-img">
                         <img src="assets/img/home-img-3.png" alt="Hot Pizza" class="swiper-img__image" loading="lazy">
@@ -79,10 +79,10 @@
             <div>
                 <div class="cards-container cards-container--small">
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-001.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -96,10 +96,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-002.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -113,10 +113,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-003.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -130,10 +130,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-004.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -147,10 +147,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-005.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -164,10 +164,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-006.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -181,10 +181,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-006.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -198,10 +198,10 @@
                         </div>
                     </div>
                     <div class="card card--small">
-                        <a href="#" class="icon icon--card-right"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="icon icon--card-left"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon icon--card-right" aria-label="Like This Dish"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="icon icon--card-left" aria-label="Show Info Dish"><i class="fas fa-heart"></i></a>
                         <img src="assets/img/dishes-png/dish-006.png" alt="Tasty Food" class="card--small__image" loading="lazy">
-                        <h3 class="title title--subtitle">Tasty Food</h3>
+                        <h2 class="title title--subtitle">Tasty Food</h2>
                         <div class="card__stars">
                             <i class="fas fa-star star"></i>
                             <i class="fas fa-star star"></i>
@@ -249,7 +249,7 @@
             <h2 class="title title--section">Today's Speciality</h2>
             <div class="cards-container cards-container--large">
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-001.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -266,7 +266,7 @@
                     </div>
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-002.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-003.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -300,7 +300,7 @@
                     </div>                   
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-004.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -317,7 +317,7 @@
                     </div>                  
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-005.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -334,7 +334,7 @@
                     </div>                  
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-006.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -351,7 +351,7 @@
                     </div>
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-007.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -368,7 +368,7 @@
                     </div>
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-008.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -385,7 +385,7 @@
                     </div>
                 </div>
                 <div class="card card--large">
-                    <a href="#" class="icon icon--float"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="icon icon--float" aria-label="Like This Dish"><i class="fas fa-heart"></i></a>
                     <img src="assets/img/menu/menu-009.jpg" alt="Delicious Food" class="card--large__image" loading="lazy">
                     <div class="card__stars">
                         <i class="fas fa-star star"></i>
@@ -524,41 +524,41 @@
             <div class="footer-links">
                 <span class="title title--footer">Locations</span>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-nav__item">India</a></li>
-                    <li><a href="#" class="footer-nav__item">Japan</a></li>
-                    <li><a href="#" class="footer-nav__item">Russia</a></li>
-                    <li><a href="#" class="footer-nav__item">USA</a></li>
-                    <li><a href="#" class="footer-nav__item">France</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in India">India</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in Japan">Japan</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in Russia">Russia</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in USA">USA</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in France">France</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <span class="title title--footer">Quick Link</span>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-nav__item">Home</a></li>
-                    <li><a href="#" class="footer-nav__item">Dishes</a></li>
-                    <li><a href="#" class="footer-nav__item">About</a></li>
-                    <li><a href="#" class="footer-nav__item">Menu</a></li>
-                    <li><a href="#" class="footer-nav__item">Reviews</a></li>
-                    <li><a href="#" class="footer-nav__item">Order</a></li>
+                    <li><a href="#home" class="footer-nav__item" aria-label="Go Home">Home</a></li>
+                    <li><a href="#dishes" class="footer-nav__item" aria-label="Go Dishes">Dishes</a></li>
+                    <li><a href="#about" class="footer-nav__item" aria-label="Go About">About</a></li>
+                    <li><a href="#menu" class="footer-nav__item" aria-label="Go Menu">Menu</a></li>
+                    <li><a href="#review" class="footer-nav__item" aria-label="Go Reviews">Reviews</a></li>
+                    <li><a href="#order" class="footer-nav__item" aria-label="Go Order">Order</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <span class="title title--footer">Contact</span>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-nav__item">+123-000-0000</a></li>
-                    <li><a href="#" class="footer-nav__item">+111-333-2222</a></li>
-                    <li><a href="#" class="footer-nav__item">resto@email.com</a></li>
-                    <li><a href="#" class="footer-nav__item">shaikhanas@email.com</a></li>
-                    <li><a href="#" class="footer-nav__item">Mumbai, India - 400104</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto Number">+123-000-0000</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto Number Secondary">+111-333-2222</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Sendo email to resto@email.com">resto@email.com</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Send Email to shaikhanas@email.com">shaikhanas@email.com</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Show Location">Mumbai, India - 400104</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <span class="title title--footer">Follow Us</span>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-nav__item">Facebook</a></li>
-                    <li><a href="#" class="footer-nav__item">Twitter</a></li>
-                    <li><a href="#" class="footer-nav__item">Instagram</a></li>
-                    <li><a href="#" class="footer-nav__item">LinkedIn</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in Facebook">Facebook</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in Twitter">Twitter</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in Instagram">Instagram</a></li>
+                    <li><a href="#" class="footer-nav__item" aria-label="Resto in LinkedIn">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
